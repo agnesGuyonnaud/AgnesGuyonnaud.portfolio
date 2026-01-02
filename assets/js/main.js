@@ -89,6 +89,8 @@
 
 			});
 
+	//chart
+	
 	// Menu.
 		var $menu = $('#menu');
 
