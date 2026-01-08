@@ -24,9 +24,220 @@
 					<div id="main">
 						<div class="inner">
 							<h1>Connect4 bots</h1>
+							<span class="image main"><img src="images/connect41.png" alt="" /></span>
 							<h3>Declaratively programmed bot players for our childhood's boardgame. This project allowed us to discover Prolog's programming paradigm.</h3>
 
-							<p></p>
+							<p>Here is an example of game : </p>
+
+							<textarea rows="10" cols="50" style="resize: none; overflow: auto; font-family: monospace; background-color: black; color: white">
+	Welcome to Puissance 4.
+
+	Number of human players? |: 1.
+
+	Is human playing X or O (X moves first)? |: X.
+	What kind of AI should the computer2 use among [random,blockWinning,minimax,minimax_scoring,minimax_ab,minimax_ab_opti]? |: blockWinning.
+
+	Player 1 is human
+	Player 2 is blockWinning
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+
+
+	Player 1 move? |: 4.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | |x| | | |
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 4.
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | |o| | | |
+	| | | |x| | | |
+
+
+	Player 1 move? |: 3.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | |o| | | |
+	| | |x|x| | | |
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 1.
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | |o| | | |
+	|o| |x|x| | | |
+
+
+	Player 1 move? |: 2.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | |o| | | |
+	|o|x|x|x| | | |
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 5.
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | |o| | | |
+	|o|x|x|x|o| | |
+
+
+	Player 1 move? |: 3.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | |x|o| | | |
+	|o|x|x|x|o| | |
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 5.
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | |x|o|o| | |
+	|o|x|x|x|o| | |
+
+
+	Player 1 move? |: 3.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | | | | | | |
+	| | |x| | | | |
+	| | |x|o|o| | |
+	|o|x|x|x|o| | |
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 3.
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	| | |x| | | | |
+	| | |x|o|o| | |
+	|o|x|x|x|o| | |
+
+
+	Player 1 move? |: 2.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	| | |x| | | | |
+	| |x|x|o|o| | |
+	|o|x|x|x|o| | |
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 7.
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	| | |x| | | | |
+	| |x|x|o|o| | |
+	|o|x|x|x|o| |o|
+
+
+	Player 1 move? |: 4.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	| | |x|x| | | |
+	| |x|x|o|o| | |
+	|o|x|x|x|o| |o|
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 1.
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	| | |x|x| | | |
+	|o|x|x|o|o| | |
+	|o|x|x|x|o| |o|
+
+
+	Player 1 move? |: 2.
+
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	| |x|x|x| | | |
+	|o|x|x|o|o| | |
+	|o|x|x|x|o| |o|
+
+
+	Block-winning AI is thinking about next move...
+
+	Computer places o in column 1.
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	|o|x|x|x| | | |
+	|o|x|x|o|o| | |
+	|o|x|x|x|o| |o|
+
+
+	Player 1 move? |: 5.
+	
+	| | | | | | | |
+	| | | | | | | |
+	| | |o| | | | |
+	|o|x|x|x|x| | |
+	|o|x|x|o|o| | |
+	|o|x|x|x|o| |o|
+	Game over: opponent wins.
+
+	Game over: X wins.
+							</textarea>
+							<br/>
+							<p>We worked incrementally to implement several AI : </p>
+							<div style="display: flex; align-items: center; ">
+								<img src="images/connect42.png" style="width: 20vw; height: auto;" />
+								<img src="images/connect43.png" style="width: 20vw; height: auto;" />
+								<img src="images/connect44.png" style="width: 20vw; height: auto;" />
+								<img src="images/connect45.png" style="width: 20vw; height: auto;" />
+							</div>
+							<p>And since we could vary the number of human player (0, 1 or 2), we could have AI fights to know wich one was the more clever ! (spoiler alert : it's not always the one we would think...)</p>
+							<br/>
+							<p>We tested our code with automated Prolog unit tests.</p>
 						</div>
 					</div>
 
